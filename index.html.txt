@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="left">
+            <img src="images/hero-image.png" alt="hero-image">
+        </div>
+        <div class="right">
+            <div class="top">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <p class="top1">We are <span><strong style="font-family: 'Segoe UI';">experts</strong></span> in business, marketing, growth, & sales.</p>
+            <p class="login-text">Login into your account</p>
+            <form>
+                <input type="text" name="Username" placeholder="Username"> <br><br>
+                <input type="password" name="Password" placeholder="Password"> <br><br>
+                <div class="forgot">
+                    <button id="Lbutton">Login</button>
+                    <p>Forgot Password?</p>
+                </div><br><br><br>
+                <div class="bottom">
+                    <p class="member">Are you a new Member?</p>
+                    <p class="register">Register here</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
