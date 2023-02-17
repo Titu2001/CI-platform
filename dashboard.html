@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="position-relative">
+
+    <nav class="dashboard-navbar position-fixed top-0 start-0 end-0 d-flex align-items-center  px-4 py-4 gap-5">
+        <!-- nav-left -->
+        <div class="navbar-left d-flex  gap-4 align-items-center">
+            <object class="navbar-menu dashboard__icon" data="./images/menu-bar.svg"></object>
+            <object class="dashboard-navbar__logo d-none d-sm-block" data="./images/logo.svg"></object>
+            <object class="dashboard-navbar__logo d-block d-sm-none" data="./images/favicon.ico"></object>
+        </div>
+
+        <!-- nav-right -->
+        <div class="navbar-search d-flex align-items-center w-100 gap-3">
+            <object class="search-icon dashboard__icon" data="./images/search-icon.svg" width="24px"
+                height="24px"></object>
+            <p class="sarch-text m-0">Search</p>
+        </div>
+        <div class="navbar-right d-flex align-items-center gap-5">
+            <div class="navbar-notification">
+                <object class="noti-icon dashboard__icon" data="./images/notification-icon.svg"></object>
+            </div>
+            <div class="navbar-profile d-flex align-items-center gap-3">
+                <img class="dashboard-profile__img " src="./images/profile.png" alt="profile image">
+                <p class="dashboard-profile-name d-none d-sm-block m-0">John Doe</p>
+                <object class="icon" data="./images/downward-arrow.svg"></object>
+            </div>
+        </div>
+    </nav>
+    <div class="dashboard-main d-flex">
+        <ul class="sidebar d-none d-sm-block h-100 p-0 pt-3 d-flex flex-column align-items-center gap-3">
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon dashboard__icon" data="./images/dashboard-active.svg"
+                        type=""></object>Dashboard</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/graph-default.svg" type=""></object>Analysis</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/inbox-default.svg" type=""></object>Inbox</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/clock-default.svg" type=""></object>History</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/user-default.svg" type=""></object>Users</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/maintenance-default.svg" type=""></object>Maintenance</a>
+            </li>
+            <li class="d-flex align-items-center px-3">
+                <a class="text-decoration-none text-reset d-flex align-items-center gap-2" href="#"><object
+                        class="sidebar-icon" data="./images/setting-default.svg" type=""></object>Setting</a>
+            </li>
+        </ul>
+
+        <div class="content-board h-100 w-100 p-4">
+            <h1 class="dashboard-heading">Dashboard</h1>
+
+            <!-- Numerical data -->
+            <ul class="sales-data-list list-unstyled row w-100 align-items-center gap-3 my-3 mb-4">
+                <li class="sales-data-item col d-flex gap-3 shadow-sm px-4 py-4  align-items-center rounded-3">
+                    <object class="sales-data-icon" data="./images/star.svg"></object>
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="sales-data-number fs-4 fw-bold ">23,456</span>
+                        <span class="sales-data-text">New Products</span>
+                    </div>
+                </li>
+                <li class="sales-data-item col d-flex gap-3 shadow-sm px-4 py-4  align-items-center rounded-3">
+                    <object class="sales-data-icon" data="./images/new-product.svg"></object>
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="sales-data-number fs-4 fw-bold ">2345</span>
+                        <span class="sales-data-text">Added Products</span>
+                    </div>
+                </li>
+                <li class="sales-data-item col d-flex gap-3 shadow-sm px-4 py-4  align-items-center rounded-3">
+                    <object class="sales-data-icon" data="./images/total-product.svg"></object>
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="sales-data-number fs-4 fw-bold ">32,456</span>
+                        <span class="sales-data-text">Total Products</span>
+                    </div>
+                </li>
+                <li class="sales-data-item col d-flex gap-3 shadow-sm px-4 py-4  align-items-center rounded-3">
+                    <object class="sales-data-icon" data="./images/dollar-filled.svg"></object>
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="sales-data-number fs-4 fw-bold ">5678</span>
+                        <span class="sales-data-text">Today's Sale</span>
+                    </div>
+                </li>
+                <li class="sales-data-item col d-flex gap-3 shadow-sm px-4 py-4  align-items-center rounded-3">
+                    <object class="sales-data-icon" data="./images/money-bag.svg"></object>
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="sales-data-number fs-4 fw-bold ">33,534</span>
+                        <span class="sales-data-text">Total Sale</span>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- graphical data -->
+            <div class="graphical-data d-flex flex-column flex-sm-row align-items-center gap-4 mt-3 w-100">
+                <div class="graph-div shadow-sm rounded-3 p-3">
+                    <div class="graph-text d-flex align-items-center justify-content-between">
+                        <span class="fs-5 fw-semibold">Sale</span>
+                        <div class="d-flex justify-content-between gap-3 p-2">
+                            <span class="fw-semibold">Weekly</span>
+                            <span class="fw-semibold">Monthly</span>
+                            <span class="fw-bold text-danger text-decoration-underline">Yearly</span>
+                        </div>
+                    </div>
+                    <object class="graph w-100" data="./images/data-graph.png" type=""></object>
+                </div>
+                <div class="piechart-div shadow-sm rounded-3 h-100 p-3">
+                    <h3 class="fs-5 fw-semibold">Sales by country</h3>
+                    <div class="piechart-imgAndText">
+                        <object class="piechart w-100" data="./images/pie-chart.svg" type=""></object>
+                        <ul>
+                            <li class="list-item-1"><span>United States Of America</span></li>
+                            <li class="list-item-2"><span>Russia</span></li>
+                            <li class="list-item-3"><span>Canada</span></li>
+                            <li class="list-item-4"><span>India</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tabular data -->
+            <div class="tabular-data shadow-sm w-100">
+                <div class="d-flex justify-content-between pt-5">
+                    <h2>Invoices</h2>
+                    <p class="view-allDiv">View All</p>
+                </div>
+                <div class="invoice-table-div">
+                    <table class="invoice-table">
+                        <thead>
+                            <tr>
+                                <th>INVOICE</th>
+                                <th>COMPANY NAME</th>
+                                <th>EMAIL</th>
+                                <th>DUE DATE</th>
+                                <th>STATUS</th>
+                                <th>AMOUNT</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>651535</td>
+                                <td>Public Adjusting Firm</td>
+                                <td>georgia.young@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td>
+                                    <div class="paid">Paid</div>
+                                </td>
+                                <td>$47,800</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td>Other</td>
+                                <td>jessica.hanson@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td>
+                                    <div class="paid">Paid</div>
+                                </td>
+                                <td>$98,000</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td>Vendor</td>
+                                <td>alma.lawson@example.com</td>
+                                <td>8 Sep, 2020</td>
+                                <td>
+                                    <div class="paid">Paid</div>
+                                </td>
+                                <td>$20,900</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td>Property Management Company</td>
+                                <td>kenzi.lawson@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td>
+                                    <div class="paid">Paid</div>
+                                </td>
+                                <td>$10,570</td>
+                            </tr>
+                            <tr>
+                                <td>651535</td>
+                                <td>Subcontractor Company</td>
+                                <td>jackson.graham@example.com</td>
+                                <td>1 Feb, 2020</td>
+                                <td>
+                                    <div class="failed">Failed</div>
+                                </td>
+                                <td>$10,200</td>
+                            </tr>
+                            <tr>
+                                <td>653518</td>
+                                <td>Mortgage Company</td>
+                                <td>felicia.reid@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td>
+                                    <div class="pending">Pending</div>
+                                </td>
+                                <td>$12,600</td>
+                            </tr>
+                            <tr>
+                                <td>487441</td>
+                                <td>TPA</td>
+                                <td>dolores.chamber@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td>
+                                    <div class="paid">Paid</div>
+                                </td>
+                                <td>$11,170</td>
+                            </tr>
+                            <tr>
+                                <td>267400</td>
+                                <td>Fire Department</td>
+                                <td>nevaeh.simmons@example.com</td>
+                                <td>17 Oct, 2020</td>
+                                <td>
+                                    <div class="failed">Failed</div>
+                                </td>
+                                <td>$28000</td>
+                            </tr>
+                            <tr>
+                                <td>449003</td>
+                                <td>Insurance Carrier</td>
+                                <td>curtis.weaver@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td>
+                                    <div class="paid">Paid</div>
+                                </td>
+                                <td>$10,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
